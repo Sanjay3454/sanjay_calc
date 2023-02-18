@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    
+<div class="border border-secondary container bg-dark bg-gradient pt-3 mt-3 form-control" style="width:390px; height: 390px;padding:2px;">
+    <h1 class="text-center text-secondary">CASIO</h1>
+
+    <div><input type="text"  style="width: 373px; height: 60px; text-align: right; font-size: 3rem; margin-left: 6px; background-color: rgb(178, 212,228); border: none;" class="form-control "  placeholder="0" id="input"></div>
+
+    <div class="row mt-4 ms-2 me-2 ">
+    <div class="col-3 "><button style="width:70px;height: 30px; border-radius: 7px; background-color: rgb(75, 75, 75); color: aliceblue;font-size: 1.1rem;" onclick="displayNum('7')">7</button></div>
+    <div class="col-3"><button style="width:70px;height: 30px; border-radius: 7px;  background-color: rgb(75, 75, 75); color: aliceblue;font-size: 1.1rem;" onclick="displayNum('8')">8</button></div>
+    <div class="col-3"><button style="width:70px;height: 30px; border-radius: 7px;  background-color: rgb(75, 75, 75); color: aliceblue;font-size: 1.1rem;" onclick="displayNum('9')">9</button></div>
+    <div class="col-3"><button style="width:70px;height: 30px; border-radius: 7px;  background-color: rgb(75, 75, 75); color: aliceblue;font-size: 1.1rem;" onclick="displayNum('+')">+</button></div>
+    </div>
+
+    <div class="row mt-3 ms-2 me-2 ">
+        <div class="col-3"><button style="width:70px;height: 30px; border-radius: 7px;  background-color: rgb(75, 75, 75); color: aliceblue;font-size: 1.1rem;" onclick="displayNum('4')">4</button></div>
+        <div class="col-3"><button style="width:70px;height: 30px; border-radius: 7px;  background-color: rgb(75, 75, 75); color: aliceblue;font-size: 1.1rem;" onclick="displayNum('5')">5</button></div>
+        <div class="col-3"><button style="width:70px;height: 30px; border-radius: 7px;  background-color: rgb(75, 75, 75); color: aliceblue;font-size: 1.1rem;" onclick="displayNum('6')">6</button></div>
+        <div class="col-3 "><button style="width:70px;height: 30px; border-radius: 7px;  background-color: rgb(75, 75, 75); color: aliceblue;font-size: 1.1rem;" onclick="displayNum('-')">-</button></div>
+        </div>
+
+
+        <div class="row mt-3 ms-2 me-2">
+            <div class="col-3"><button style="width:70px;height: 30px; border-radius: 7px;  background-color: rgb(75, 75, 75); color: aliceblue;font-size: 1.1rem;" onclick="displayNum('1')">1</button></div>
+            <div class="col-3"><button style="width:70px;height: 30px; border-radius: 7px;  background-color: rgb(75, 75, 75); color: aliceblue;font-size: 1.1rem;" onclick="displayNum('2')">2</button></div>
+            <div class="col-3"><button style="width:70px;height: 30px; border-radius: 7px;  background-color: rgb(75, 75, 75); color: aliceblue;font-size: 1.1rem;" onclick="displayNum('3')">3</button></div>
+            <div class="col-3"><button style="width:70px;height: 30px; border-radius: 7px;  background-color: rgb(75, 75, 75); color: aliceblue;font-size: 1.1rem;" onclick="displayNum('*')">*</button></div>
+            </div>
+
+
+            <div class="row mt-3 ms-2 me-2">
+                <div class="col-3"><button style="width:70px;height: 30px; border-radius: 7px;  background-color: rgb(75, 75, 75); color: aliceblue;font-size: 1.1rem;" onclick="allClear()">AC</button></div>
+                <div class="col-3"><button style="width:70px;height: 30px; border-radius: 7px;  background-color: rgb(75, 75, 75); color: aliceblue;font-size: 1.1rem;" onclick="displayNum('0')">0</button></div>
+                <div class="col-3"><button style="width:70px;height: 30px; border-radius: 7px;  background-color: rgb(75, 75, 75); color: aliceblue;font-size: 1.1rem;" onclick="displayNum('/')">/</button></div>
+                <div class="col-3"><button style="width:70px;height: 30px; border-radius: 7px;  background-color: rgb(75, 75, 75); color: aliceblue;font-size: 1.1rem;" onclick="displayNum('.')">.</button></div>
+                </div>
+
+                <div class="row container w-100 mt-2  ">
+
+            <div class="col-6 mt-3 "> <button style="width:160px;height: 30px;border-radius: 7px;  background-color: rgb(75, 75, 75); color: aliceblue;font-size: 1.1rem;" onclick="backSpace()" class="  ms-2 container "> &#9003;</button> </div>
+               <div class="col-6 mt-3"><button style="width:160px;height: 30px; border-radius: 7px;  background-color: rgb(75, 75, 75); color: aliceblue;font-size: 1.1rem;" onclick="evaluateExpr()" class="ms-3  container"> =</button> </div>
+               
+               
+            
+                </div>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div> 
+</body>
+<script src="./calculator.js"></script>
+</html>
